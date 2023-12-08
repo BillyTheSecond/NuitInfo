@@ -1,17 +1,13 @@
+{% extends "core/base.html" %}
 {% load static %}
 
-<!DOCTYPE html>
-<html>
 
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" , content="width=device-width, initial-scale=1.0">
-    <title>Velosaure Game</title>
-    <link rel="stylesheet" href="{% static 'css/velosaure.css' %}">
-    <script src="{% static 'js/velosaure.js'%}"></script>
-</head>
-<body>
-    <h1>Velosaure Game</h1>
-    <canvas id="game"></canvas>
-</body>
-</html>
+{% block title%}LE JEU DU VELOSAURE{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'css/velosaure.css' %}">
+<script src="{% static 'js/velosaure.js'%}"></script>
+{% endblock %}
+{% block content %}
+<canvas id="game"></canvas>
+{% endblock %}
