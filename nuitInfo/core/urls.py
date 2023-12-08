@@ -16,4 +16,5 @@ urlpatterns = [
     path('article8/', views.article8, name='article8'),
     path('article9/', views.article9, name='article9'),
     path('article10/', views.article10, name='article10'),
+    path('mentions/', views.mentions, name='mentions'),
 ]
