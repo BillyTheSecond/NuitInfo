@@ -27,8 +27,6 @@ def quiz_view(request):
 
         json_list.append(question_dict)
 
-    print(json_list)
-
     json_list = json.dumps(json_list)
 
     return render(request, 'quiz.html', {'data': json_list})
