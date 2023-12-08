@@ -1,7 +1,11 @@
+{% extends "core/base.html" %}
 {% load static %}
-<!DOCTYPE html>
+{% block title%}Ecclogy | Le Quizzzz !{% endblock %}
 
-<head>
+
+{% block stylesheet %}
+<link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css" />
+<link rel="stylesheet" href="{% static 'css/quiz.css' %}">
     <script> 
     //console.error("{{data|escapejs}}");
     const questions = JSON.parse("{{data|escapejs}}").map(k => {
@@ -12,8 +16,11 @@
             return res;
         }); </script>
     <script defer src="{% static 'js/main.js' %}"></script>
-</head>
+  {% endblock %}
 
-<body>
-    <p id="quiz"></p>
-</body>
+
+{% block content %}
+        <p id="quiz"></p>
+
+
+{% endblock %}
