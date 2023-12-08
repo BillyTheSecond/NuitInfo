@@ -1,36 +1,4 @@
-/*
-const questions = [
-    {
-        'question': 'Nathan ?',
-        'anwser1': 'Non',
-        'anwser2': 'Si',
-        'anwser3': 'test',
-        'anwser': 'bah non',
-    },
-    {
-        'question': 'Nathan 2 ?',
-        'anwser1': 'Feur',
-        'anwser2': 'Quoi ?',
-        'anwser3': 'mdrrr',
-        'anwser5': 'xD',
-        'anwser': 'bah coubeh',
-    },
-    {
-        'question': 'Nathan 3 ?',
-        'anwser1': 'Feur',
-        'anwser2': 'Quoi ?',
-        'anwser3': 'mdrrr',
-        'anwser5': 'xD',
-        'anwser': 'bah coubeh',
-    },
-].map(k => {
-    const res       = {};
-    res.question    = k.question;
-    res.answers     = Object.keys(k).filter(k => k.match(/anwser\d+/)).map(a => k[a]);
-    res.explanation = k.anwser;
-    return res;
-});
-*/
+
 const last_choices = new Array(questions.length).fill(null);
 console.error(questions)
 
@@ -52,8 +20,8 @@ function displayQuestion(id) {
 
     console.debug(last_choices);
 
-    const html = [`<h3 id="${id}">Question ${id + 1}</h3>`, `<p class='question'>${the_chosen_one.question}</p>`];
-    randomizeArray(the_chosen_one.answers).forEach(a => html.push(`<p><input type="radio" name="answer">${a}</p>`));
+    const html = [`<h3 id="${id}">Question ${id + 1}</h3>`, `<p class="question">${the_chosen_one.question}</p>`];
+    randomizeArray(the_chosen_one.answers).forEach(a => html.push(`<label><input type="radio" name="answer">${a}</label></br>`));
 
     html.push(`<p id="explanation" hidden>${questions[id].explanation}</p>`);
 
@@ -73,16 +41,14 @@ function displayQuestion(id) {
         });
     });
 
-    console.error(radios);
-
     if (last_choices[id] !== null) submitAnswer();
 }
 
 function submitAnswer() {
     const quiz          = document.getElementById('quiz');
     const question_id   = quiz.children[0].id;
-    const radios        = [...quiz.children].slice(2, questions[question_id].answers.length + 2);
-    // console.error(quiz);
+    const radios        = [...quiz.children].filter(k => k.childElementCount > 0);
+    // console.error(quiz, radios);
     const chosen_answer = radios.find(p => p.firstChild.checked)?.textContent;
 
     if (!chosen_answer) return console.error('Could not find a chosen answer.');
@@ -106,6 +72,5 @@ function submitAnswer() {
         if (next) next.disabled = false;
     }
 }
-
 // window.addEventListener('load', () => { displayQuestion(0) })
 window.onload = function() { displayQuestion(0); }

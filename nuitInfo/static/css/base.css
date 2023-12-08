@@ -9,9 +9,7 @@
 
 
 
-span:hover{
-  color: #479260;
-}
+
 
 * {
   margin: 0;
@@ -35,7 +33,11 @@ h3 {
   padding-top : 16px;
   padding-bottom: 16px;
 }
-
+img {
+  max-height: 60vh;
+  border-radius:24px;
+  border: solid 1px lightgrey;
+}
 
 
 /* liens par défaut */
@@ -87,10 +89,9 @@ input[type="checkbox"] {
     margin-left: calc(47px - 20px - 6px);
   }
 
-
 /* boutons */
 
-input[type="button"],button {
+input[type="button"] {
   border-radius: 8px;
   padding: 6px 12px;
   color:lightgrey;
@@ -99,14 +100,9 @@ input[type="button"],button {
   border: none;
   font-size: 20px;
   margin: 20px 0;
-  cursor: pointer;
 }
-input[type="button"]:hover,button:hover {
-  background-color:#17495e;
-}
-input[type="button"]:active,button:active {
-  background-color:#0c2530;
-}
+
+
 
 
 
@@ -174,6 +170,8 @@ header div#logo-box {
 header div#logo-box img {
   height: 40px;
   padding-right: 16px;
+  border: none;
+  border-radius: 0;
 }
 header div h1,foo div h1  {
   font-family: "Anton";
@@ -236,6 +234,9 @@ foo div#marque h1 span{
 foo div#marque img {
   height: 150px;
   padding-right: 16px;
+  border: none;
+  border-radius: 0;
+
 }
 foo div#header-right {
   min-width: 300px;
@@ -260,10 +261,16 @@ foo div#header-right * {
 foo div#header-right>div a>img {
   height: 32px;
   padding-right: 8px;
+  border: none;
+  border-radius: 0;
+
 }
 /* petite animation */
 foo div#header-right>div a>img:hover {
   transform: scale(1.05);
+  border: none;
+  border-radius: 0;
+
 }
 
 
@@ -308,7 +315,10 @@ foo div#header-right>div a>img:hover {
   }
   img#menu-icon {
     height: 20px;
-    transform: rotate(-90deg)
+    transform: rotate(-90deg);
+    border: none;
+    border-radius: 0;
+  
   }
   
   img#menu-icon.ferme {
@@ -319,5 +329,7 @@ foo div#header-right>div a>img:hover {
   }
 
 }
+
+
 
 
