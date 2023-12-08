@@ -52,7 +52,7 @@ function displayQuestion(id) {
 
     console.debug(last_choices);
 
-    const html = [`<h3 id="${id}">Question ${id + 1}</h3>`, `<p>${the_chosen_one.question}</p>`];
+    const html = [`<h3 id="${id}">Question ${id + 1}</h3>`, `<p class='question'>${the_chosen_one.question}</p>`];
     randomizeArray(the_chosen_one.answers).forEach(a => html.push(`<p><input type="radio" name="answer">${a}</p>`));
 
     html.push(`<p id="explanation" hidden>${questions[id].explanation}</p>`);
