@@ -104,9 +104,11 @@ function moveVelo(e) {
         return;
     }
 
-    if ((e.code == "Space" || e.code == "ArrowUp") && velo.y == veloY) {
+    if ((e.code == "Space" || e.code == "ArrowUp") ) {
         e.preventDefault();
-        velocityY = -10;
+        if (velo.y == veloY) {
+            velocityY = -10;
+        }
 
     }
 }
