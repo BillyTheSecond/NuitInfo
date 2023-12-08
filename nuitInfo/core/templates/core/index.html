@@ -1,1 +1,22 @@
 {% extends "core/base.html" %}
+{% load static %}
+{% block title%}Ecclogy{% endblock %}
+
+
+{% block stylesheet %}
+<link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css" />
+  {% endblock %}
+
+{% block content %}
+<div class="haut">
+  <div class="introduction">
+    <h1 class ="titre">Bienvenue sur notre site web !</h1>
+  <p class="text">Le changement climatique est une réalité; pourtant, beaucoup de gens le dénie encore tandis que d'autres
+    ont de fausses idées sur le sujet. 
+  </p>
+  </div>
+  
+<img src="{% static 'media/index_picture.png' %}" alt="Dessin de deux personnes qui entretiennent la terre" class="picture">
+</div>
+
+{% endblock %}

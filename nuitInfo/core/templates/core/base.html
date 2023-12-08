@@ -7,6 +7,7 @@
   <meta charset="utf-8">
   <link rel="icon" href="{% static 'media/icon/Logo.ico' %}" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <script src="{% static 'js/base.js' %}"></script>
   <!-- être sur que la page soit lisible sur mobile -->
   <title>{% block title%}{% endblock %}</title>
   <link href="{% static 'css/base.css' %}" rel="stylesheet" type="text/css" />
@@ -19,7 +20,7 @@
       <img src="{% static 'media/Logo.svg' %}" alt="logo le plus beau" class="logo">
       <h1>Ecclogy <span> - by WiseBits</span></h1>
     </div>
-    <div class="header-right">
+    <div id="header-right" class="ferme">
       <a class="active" href="/">Home</a>
       <a href="#">A propos de nous</a>
       <a href="#">Nos articles</a>
@@ -27,6 +28,7 @@
       <input id="bouton-theme" type="checkbox" checked="checked" >
       <label for="bouton-theme"></label>
     </div>
+    <img onclick="changerEtatMenu();" id="menu-icon" class="mobile-only ferme" src="{% static 'media/icon/chevron-down-solid.svg' %}" alt="menu">
   </header>
 
 
