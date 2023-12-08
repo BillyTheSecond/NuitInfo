@@ -2,7 +2,7 @@
 // board
 let board;
 let boardWidth = 1000;
-let boardHeight = 350;
+let boardHeight = 500;
 let context;
 
 // velo
@@ -36,7 +36,7 @@ let caillou2Img;
 // physics
 let velocityX = -8;
 let velocityY = 0;
-let gravity = .3;
+let gravity = .2;
 
 let gameOver = false;
 let score = 0;
@@ -93,10 +93,10 @@ function update() {
     }
 
     // score
-    context.fillStyle ="black";
-    context.font= "20px courier";
+    context.fillStyle ="#479260";
+    context.font= "30px Lato";
     score++;
-    context.fillText(score,5,20);
+    context.fillText(score,10,35);
 }
 
 function moveVelo(e) {
@@ -105,7 +105,8 @@ function moveVelo(e) {
     }
 
     if ((e.code == "Space" || e.code == "ArrowUp") && velo.y == veloY) {
-        velocityY = -12;
+        e.preventDefault();
+        velocityY = -10;
 
     }
 }
