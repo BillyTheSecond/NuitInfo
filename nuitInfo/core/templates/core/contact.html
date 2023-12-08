@@ -1,0 +1,29 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block title%}Ecclogy | Contact{% endblock %}
+
+{% block stylesheet %}
+<link rel="stylesheet" href="{% static 'css/contact.css' %}">
+{% endblock %}
+
+{% block content %}
+<div class="normal">
+  <div class="bureaux">
+    <h1>Nos bureaux</h1>
+    <p>Maison du Père Noël, 14 rue du Pôle Nord,
+    Mont Korvatunturi, LAPONIE</p>
+    <button>S'y rendre</button>
+  </div>
+
+  <div class="contact">
+    <h1>Nous Contacter</h1>
+    <p>Téléphone : 3630</p>
+    <button>Appeler</button>
+    <br>
+    <br>
+    <p>Mail : pere-noel@laposte.net</p>
+    <button>Contacter</button>
+  </div>
+
+</div>
+{% endblock %}
