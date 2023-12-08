@@ -5,14 +5,19 @@
 
 
 {% block content %}
-<h1 class="titre_article">Article 1</h1>
-<h1>Image | Article 1</h1> <!-- Image de l'article -->
-<p class="texte_article">
-    Lorem ipsum dolor sit am Lorem ipsum dolor sit am Lorem ipsum dolor sit am Lorem ipsum dolor sit am Lorem ipsum dolor sit am 
-    Lorem ipsum dolor sit am Lorem ipsum dolor sit am Lorem ipsum dolor sit am Lorem ipsum dolor sit am Lorem ipsum dolor sit am
-    Lorem ipsum dolor sit am Lorem ipsum dolor sit am Lorem ipsum dolor sit am Lorem ipsum dolor sit am Lorem ipsum dolor sit am
-    Lorem ipsum dolor sit am Lorem ipsum dolor sit am Lorem ipsum dolor sit am Lorem ipsum dolor sit am Lorem ipsum dolor sit am
-    Lorem ipsum dolor sit am Lorem ipsum dolor sit am Lorem ipsum dolor sit am Lorem ipsum dolor sit am Lorem ipsum dolor sit am
-    Lorem ipsum dolor sit am Lorem ipsum dolor sit am Lorem ipsum dolor sit am Lorem ipsum dolor sit am Lorem ipsum dolor sit am
-</p>
+<h1 class="titre_article">La biodiversité est-elle impacté par le rechauffement climatique ?</h1>
+<iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0ASELECT%20DISTINCT%20*%20WHERE%20%7B%3Fitem%20wdt%3AP31%2Fwdt%3AP279*%20wd%3AQ179049%3Bwdt%3AP625%20%3Fgeo%20.%7D%20" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+<div class="contenu_article">
+    <p class="texte_article">
+        Oui, le réchauffement climatique a un impact significatif sur la biodiversité à l'échelle mondiale. Les changements climatiques rapides affectent les écosystèmes et les espèces de différentes manières, mettant en péril la diversité biologique de la planète.
+
+    Voici quelques-uns des principaux impacts du réchauffement climatique sur la biodiversité :
+
+    Perte d'habitat : Les changements de température et les conditions météorologiques extrêmes altèrent les habitats naturels. Par exemple, la fonte des glaciers, la montée du niveau de la mer et les modifications des régimes de précipitations affectent les écosystèmes côtiers et les zones polaires, menaçant la biodiversité associée à ces régions.<br><br>
+    Migration et déplacement des espèces : Les changements climatiques poussent de nombreuses espèces à migrer vers des régions plus froides ou à des altitudes plus élevées pour trouver des conditions environnementales adaptées à leurs besoins. Cependant, toutes les espèces ne sont pas capables de s'adapter ou de se déplacer rapidement, ce qui peut entraîner des perturbations dans les chaînes alimentaires et des déplacements de populations animales.<br><br>
+    Extinctions et pertes de biodiversité : Les modifications rapides de l'environnement peuvent conduire à des extinctions locales ou même à l'extinction totale de certaines espèces incapables de s'adapter aux nouveaux changements. La perte de biodiversité affecte non seulement les espèces elles-mêmes, mais aussi les écosystèmes et les services écosystémiques qu'ils fournissent, tels que la pollinisation des cultures, la purification de l'eau et la régulation du climat.<br><br>
+    Dégradation des écosystèmes terrestres et marins : Les changements climatiques ont un impact sur la santé des écosystèmes, entraînant par exemple la décoloration des coraux, la diminution des populations d'espèces animales, l'acidification des océans et la perturbation des cycles naturels.<br><br>
+    La combinaison de ces effets du réchauffement climatique contribue à une crise de la biodiversité à l'échelle mondiale, avec des conséquences potentiellement graves pour les écosystèmes, les espèces et les interactions écologiques. La préservation de la biodiversité nécessite des mesures urgentes pour réduire les émissions de gaz à effet de serre et pour mettre en place des stratégies d'adaptation et de conservation des habitats naturels.
+    </p>
+</div>
 {% endblock %}
