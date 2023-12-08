@@ -1,0 +1,21 @@
+{% extends "core/base.html" %}
+{% load static %}
+{% block title%}Article 5{% endblock %}
+
+
+
+{% block content %}
+<h1 class="titre_article">Et la mer en 2050 ?</h1>
+<iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0ASELECT%20DISTINCT%20*%20WHERE%20%7B%3Fitem%20wdt%3AP31%2Fwdt%3AP279*%20wd%3AQ515%3Bwdt%3AP625%20%3Fgeo%20%3Bwdt%3AP2044%20%3Flevelupsea%3BFILTER(%3Flevelupsea%20<%202)%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
+<p class="texte_article">
+    Les projections précises du niveau de la mer d'ici à 2050 varient en fonction de nombreux facteurs, y compris les émissions de gaz à effet de serre, les réactions climatiques et la fonte des glaces.<br><br>
+
+Selon les estimations actuelles du Groupe d'experts intergouvernemental sur l'évolution du climat (GIEC) et d'autres études scientifiques, on estime généralement que le niveau de la mer pourrait augmenter de 15 à 30 centimètres d'ici 2050 par rapport aux niveaux observés à la fin du 20e siècle.<br><br>
+
+Cependant, il est crucial de souligner que ces projections restent sujettes à une certaine incertitude en raison de la complexité des modèles climatiques et des interactions entre les différents processus climatiques<br><br>
+
+De plus, ces prévisions sont fondées sur des scénarios spécifiques d'émissions de gaz à effet de serre et peuvent être ajustées à mesure que de nouvelles données et observations sont disponibles. La gravité des changements dépendra également des actions prises pour réduire les émissions de gaz à effet de serre et atténuer le changement climatique.<br><br>
+
+Il est essentiel de continuer à surveiller de près l'évolution des conditions climatiques et environnementales pour affiner et mettre à jour ces projections au fil du temps afin de savoir de quelle manière agir.
+</p>
+{% endblock %}
