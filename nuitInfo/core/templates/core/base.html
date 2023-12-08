@@ -1,0 +1,66 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <link rel="icon" href="{% static 'media/icon/Logo.ico' %}" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- être sur que la page soit lisible sur mobile -->
+  <title>{% block title%}{% endblock %}</title>
+  <link href="{% static 'css/base.css' %}" rel="stylesheet" type="text/css" />
+  {% block stylesheet %}
+    {% endblock %}
+
+  <!-- header  -->
+  <header>
+    <div id="logo-box">
+      <img src="{% static 'media/Logo.svg' %}" alt="logo le plus beau" class="logo">
+      <h1>Ecclogy <span> - by WiseBits</span></h1>
+    </div>
+    <div class="header-right">
+      <a class="active" href="/">Home</a>
+      <a href="#">A propos de nous</a>
+      <a href="#">Nos articles</a>
+      <a href="#">Quiz !</a>
+      <input id="bouton-theme" type="checkbox" checked="checked" >
+      <label for="bouton-theme"></label>
+    </div>
+  </header>
+
+
+<div id="content">
+  {% block content %}
+  {% endblock %}
+
+  
+</div>
+
+
+  <foo>
+    <div id="marque">
+      <img src="{% static 'media/Logo.svg' %}" alt="logo le plus beau" class="logo">
+      <h1>Ecclogy <span> - by WiseBits</span></h1>
+    </div>
+    <div id="header-right">
+      <h3>Services</h3>
+      
+        <a href="#">Contact</a>
+        <a href="#">Mentions légales</a>
+        <h3>Suivez nous sur les réseaux sociaux !</h3>
+      <div id="reseaux-logos">
+        <a href="https://www.instagram.com/reseauactionclimat/"><img src="{% static 'media/icon/instagram.svg' %}" alt="instagram"
+            class="logo-footer"></a>
+        <a href="https://twitter.com/racfrance"><img src="{% static 'media/icon/twitter.svg' %}" alt="twitter" class="logo-footer"></a>
+      </div>
+    </div>
+  </foo>
+
+<body>
+
+</body>
+
+</head>
+
+</html>
