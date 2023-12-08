@@ -1,0 +1,76 @@
+.titre {
+    margin: auto;
+    margin-top: 40px;
+    margin-bottom: 60px;
+    font-size: 40px;
+    flex:1;
+    
+}
+
+.titre_article {
+    margin: auto;
+    font-size: 30px;
+    flex:1;
+    color: green;
+}
+
+.introduction {
+    flex: 2;
+    padding: 30px;
+
+}
+
+.picture {
+    flex: 2;
+    height: 500px;
+    padding-right: 75px;
+    
+  }
+
+.haut {
+    display: flex;
+    flex-wrap:wrap;
+}
+
+.article {
+    padding: 1.5rem; /* Remplace p-6 */
+    background-color: #ffffff; /* Remplace bg-white */
+    border-radius: 0.75rem; /* Remplace rounded-b-xl */
+    margin: 10px;
+    
+    flex: 1;
+}
+
+.zone_article {
+    display:flex;
+    margin: auto;
+}
+
+.membre {
+    flex:1;
+    
+    
+}
+
+.photo {
+        border-radius: 100%;
+        background:white;
+
+    margin-top: 30px;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-bottom: 15px;
+}
+
+.zone_equipe {
+    display:flex;
+    margin: auto;
+
+}
+
+.nom {
+    flex:1;
+    text-align: center;
+    font-size: 40px;
+    margin-bottom: 20px;
+}
