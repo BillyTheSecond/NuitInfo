@@ -5,76 +5,116 @@
 
 {% block stylesheet %}
 <link href="{% static 'css/index.css' %}" rel="stylesheet" type="text/css" />
-  {% endblock %}
+{% endblock %}
 
 {% block content %}
 
 <div class="haut">
   <div class="introduction">
-    <h1 class ="titre">Bienvenue sur notre site web !</h1>
-  <p class="text">Le changement climatique est une réalité; pourtant, beaucoup de gens le dénient encore tandis que d'autres
-    ont de fausses idées sur le sujet. 
-  </p>
+    <h1 class="titre">Bienvenue sur notre site web !</h1>
+    <p class="text">Le changement climatique est une réalité; pourtant, beaucoup de gens le dénient encore tandis que
+      d'autres
+      ont de fausses idées sur le sujet.
+    </p>
   </div>
-  
-<img src="{% static 'media/index_picture.png' %}" alt="Dessin de deux personnes qui entretiennent la terre" class="picture">
+
+  <img src="{% static 'media/index_picture.png' %}" alt="Dessin de deux personnes qui entretiennent la terre"
+    class="picture">
 </div>
 
-<h1 class="titre introduction"> Nos derniers articles :</h1>
-  <div class="zone_article">
-    <a href="/article10" class="article">
+<h1 class="titre introduction" id="articles"> Nos articles :</h1>
+<div class="zone_article">
+  <a href="/article10" class="article">
+    <p class="titre_case">ARTICLE 10</p>
+    <h1 class="titre_article">Quel type de production d’énergie emet le plus de gaz à effet de serre ? Quelles
+      alternatives sont envisageables ?</h1>
 
-    <h1 class ="titre_article">Quel type de production d’énergie emet le plus de gaz à effet de serre ? Quelles alternatives sont envisageables ?</h1>
-  
 
 
-</a>
+  </a> 
 
   <a href="/article9" class="article">
-    
-      <h1 class ="titre_article">Qu’est-ce que l’effet de serre ? Est-ce “mauvais” pour l’environnement ?</h1>
+    <p class="titre_case">ARTICLE 9</p>
+
+    <h1 class="titre_article">Qu’est-ce que l’effet de serre ? Est-ce “mauvais” pour l’environnement ?</h1>
 
   </a>
-    
+
   <a href="/article8" class="article">
+    <p class="titre_case">ARTICLE 8</p>
+    <h1 class="titre_article">L’Homme est-il responsable de l’augmentation des températures ?</h1>
+  </a>
 
-        <h1 class ="titre_article">L’Homme est-il responsable de l’augmentation des températures ?</h1>
+  <a href="/article7" class="article">
+    <p class="titre_case">ARTICLE 7</p>
+    <h1 class="titre_article">Les solutions actuelles permettent-t-elles de réduire nos emissions de gaz à effet de serre ?</h1>
+  </a>
 
-    </a>  
-  </div>
+  <a href="/article6" class="article">
+    <p class="titre_case">ARTICLE 6</p>
+    <h1 class="titre_article">Quelles sont les conséquences du réchauffement climatique sur le long terme ?</h1>
+  </a>
+  <a href="/article5" class="article">
+    <p class="titre_case">ARTICLE 5</p>
+    <h1 class="titre_article">Et la mer en 2050 ?</h1>
+  </a>
+
+  <a href="/article4" class="article">
+    <p class="titre_case">ARTICLE 4</p>
+    <h1 class="titre_article">Toutes les regions du monde sont-elles impactées au même niveau ?</h1>
+  </a>
+
+  <a href="/article3" class="article">
+    <p class="titre_case">ARTICLE 3</p>
+    <h1 class="titre_article">Augmentation de la température moyenne prévue d’ici 2030</h1>
+  </a>
+
+  <a href="/article2" class="article">
+    <p class="titre_case">ARTICLE 2</p>
+    <h1 class="titre_article">Comment limiter l’impact des transports dans le réchauffement climatique ?</h1>
+  </a>
+
+  <a href="/article1" class="article">
+    <p class="titre_case">ARTICLE 1</p>
+    <h1 class="titre_article">La biodiversité est-elle impacté par le rechauffement climatique ?</h1>
+  </a>
+
+
+  
+
+</div>
 
 
 
 <h1 class="titre introduction"> Notre équipe :</h1>
-<div class="zone_equipe"> 
+<div class="zone_equipe">
   <div class="membre">
     <img class="photo" src="{% static 'media/baptiste.png' %}"></img>
-<p class="nom"> Baptiste</p>
+    <p class="nom"> Baptiste</p>
   </div>
   <div class="membre">
     <img class="photo" src="{% static 'media/clement.png' %}"></img>
-<p class="nom"> Clément</p>
+    <p class="nom"> Clément</p>
   </div>
   <div class="membre">
     <img class="photo" src="{% static 'media/mael.png' %}"></img>
-<p class="nom"> Mael</p>
+    <p class="nom"> Mael</p>
   </div>
 </div>
 
 
-</div>
-<div class="zone_equipe"> 
+<div class="zone_equipe">
   <div class="membre">
     <img class="photo" src="{% static 'media/maxime.png' %}"></img>
-<p class="nom"> Maxime</p>
+    <p class="nom"> Maxime</p>
   </div>
   <div class="membre">
     <img class="photo" src="{% static 'media/louison.png' %}"></img>
-<p class="nom"> Louison</p>
+    <p class="nom"> Louison</p>
   </div>
   <div class="membre">
     <img class="photo" src="{% static 'media/nathan.png' %}"></img>
-<p class="nom"> Nathan</p>
+    <p class="nom"> Nathan</p>
   </div>
 </div>
 {% endblock %}

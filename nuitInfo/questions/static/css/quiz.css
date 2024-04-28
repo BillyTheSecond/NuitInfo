@@ -1,10 +1,8 @@
-
-
-
 /* Numéro de la question */
 h3 {
     font-size: 28px;
 }
+
 div#content {
     padding: 10px 5vw;
 }
@@ -12,9 +10,15 @@ div#content {
 label {
     display: block;
     padding: 5px 10px;
-    }
+}
 
-    p.question {
-        padding: 10px 0;
-        font-size: 16px;
-    }
+p.question {
+    padding: 10px 0;
+    font-size: 16px;
+}
+
+p#explanation {
+    padding: 8px 16px;
+    border-radius: 12px;
+    background-color:rgba(255, 166, 0, 0.298);
+}

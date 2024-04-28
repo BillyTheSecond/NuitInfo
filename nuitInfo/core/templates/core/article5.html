@@ -5,6 +5,7 @@
 
 
 {% block content %}
+<div class="contenu_article">
 <h1 class="titre_article">Et la mer en 2050 ?</h1>
 <iframe style="width: 80vw; height: 50vh; border: none;" src="https://query.wikidata.org/embed.html#%23defaultView%3AMap%0ASELECT%20DISTINCT%20*%20WHERE%20%7B%3Fitem%20wdt%3AP31%2Fwdt%3AP279*%20wd%3AQ515%3Bwdt%3AP625%20%3Fgeo%20%3Bwdt%3AP2044%20%3Flevelupsea%3BFILTER(%3Flevelupsea%20<%202)%7D" referrerpolicy="origin" sandbox="allow-scripts allow-same-origin allow-popups"></iframe>
 <p class="texte_article">
@@ -18,4 +19,5 @@ De plus, ces prévisions sont fondées sur des scénarios spécifiques d'émissi
 
 Il est essentiel de continuer à surveiller de près l'évolution des conditions climatiques et environnementales pour affiner et mettre à jour ces projections au fil du temps afin de savoir de quelle manière agir.
 </p>
+</div>
 {% endblock %}
